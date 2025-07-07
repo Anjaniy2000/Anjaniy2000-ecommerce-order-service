@@ -1,10 +1,9 @@
-package com.anjaniy.ecommerce_order_service.services
+package com.anjaniy.ecommerce_order_service.service
 
 import com.anjaniy.ecommerce_order_service.BaseIntegrationSpec
 import com.anjaniy.ecommerce_order_service.exception.ConflictException
 import com.anjaniy.ecommerce_order_service.exception.ResourceNotFoundException
 import com.anjaniy.ecommerce_order_service.repository.ProductRepository
-import com.anjaniy.ecommerce_order_service.service.InventoryService
 import org.springframework.beans.factory.annotation.Autowired
 
 class InventoryServiceSpec extends BaseIntegrationSpec {

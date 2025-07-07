@@ -1,7 +1,6 @@
-package com.anjaniy.ecommerce_order_service.services
+package com.anjaniy.ecommerce_order_service.service
 
 import com.anjaniy.ecommerce_order_service.BaseIntegrationSpec
-import com.anjaniy.ecommerce_order_service.service.ProductService
 import org.springframework.beans.factory.annotation.Autowired
 
 class ProductServiceSpec extends BaseIntegrationSpec {

@@ -1,4 +1,4 @@
-package com.anjaniy.ecommerce_order_service.services
+package com.anjaniy.ecommerce_order_service.service
 
 import com.anjaniy.ecommerce_order_service.BaseIntegrationSpec
 import com.anjaniy.ecommerce_order_service.exception.ConflictException
@@ -7,7 +7,6 @@ import com.anjaniy.ecommerce_order_service.model.dto.OrderRequest
 import com.anjaniy.ecommerce_order_service.model.dto.PaymentInfoDto
 import com.anjaniy.ecommerce_order_service.model.enums.OrderStatus
 import com.anjaniy.ecommerce_order_service.model.enums.PaymentMethod
-import com.anjaniy.ecommerce_order_service.service.OrderService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.test.context.jdbc.Sql
 
