@@ -10,9 +10,11 @@ import lombok.Data;
 @Builder
 public class OrderRequest {
     @NotNull(message = "User ID is required")
+    @Min(value = 1)
     private Long userId;
 
     @NotNull(message = "Product ID is required")
+    @Min(value = 1)
     private Long productId;
 
     @NotNull(message = "Quantity is required")
