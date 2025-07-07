@@ -15,8 +15,6 @@
 | Gradle               | -               |
 | Spock (Groovy)       | 2.4 (for tests) |
 
-<h2>📚 Project Structure</h2>
-
 <h2>📦 Features & Flow</h2>
 <h3>✅ Place Order Flow</h3>
 <ol>
@@ -60,7 +58,7 @@
 <li>ProductRepository</li>
 </ul>
 
-<h2>📌 REST API Endpoints with Examples</h2>
+<h2>📌 REST API Endpoints with Examples <u>(Assignment Only)</u></h2>
 <h3>✅ 1. Place Order</h3>
 <p><b><u>POST /api/orders</u></b></p>
 <p>Place a new order by providing user ID, product ID, quantity, and payment details.</p>
