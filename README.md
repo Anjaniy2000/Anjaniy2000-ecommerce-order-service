@@ -153,7 +153,8 @@ PUT /api/orders/1001/cancel
 ```
 
 <h2>✅ How to Run</h2>
-``` bash
+
+```bash
 # Clone and go to directory
 git clone https://github.com/Anjaniy2000/Anjaniy2000-ecommerce-order-service.git
 cd Anjaniy2000-ecommerce-order-service
