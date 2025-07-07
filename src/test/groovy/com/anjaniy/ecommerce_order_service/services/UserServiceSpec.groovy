@@ -10,7 +10,7 @@ class UserServiceSpec extends BaseIntegrationSpec {
     @Autowired
     private UserService userService;
 
-    def 'Get Users' () {
+    def 'Should get users' () {
         given:
         when:
         def users = userService.getUsers()
@@ -18,7 +18,7 @@ class UserServiceSpec extends BaseIntegrationSpec {
         assert users.size() == 5
     }
 
-    def 'Get User with ID' () {
+    def 'Should get user with ID' () {
         given:
         def userId = 3
         when:

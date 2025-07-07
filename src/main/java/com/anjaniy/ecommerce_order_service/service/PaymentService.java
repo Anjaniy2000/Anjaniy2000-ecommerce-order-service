@@ -9,6 +9,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class PaymentService {
 
     public boolean processPayment(Long userId, Double amount, PaymentInfoDto paymentInfoDto) {
+        if(paymentInfoDto == null) throw new InvalidPaymentDetailsException("Payment method is required!");
         simulateLatency();
         switch (paymentInfoDto.getType()) {
             case CREDIT_CARD, DEBIT_CARD -> {

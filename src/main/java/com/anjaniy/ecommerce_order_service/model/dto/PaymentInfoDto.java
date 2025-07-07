@@ -10,7 +10,6 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class PaymentInfoDto {
-    @NotNull(message = "Payment method is required")
     private PaymentMethod type;
     private String cardNumber;
     private String expiry;

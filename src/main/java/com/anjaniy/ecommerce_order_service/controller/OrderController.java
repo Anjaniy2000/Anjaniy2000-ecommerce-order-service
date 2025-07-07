@@ -5,7 +5,6 @@ import com.anjaniy.ecommerce_order_service.model.dto.OrderDto;
 import com.anjaniy.ecommerce_order_service.model.dto.OrderRequest;
 import com.anjaniy.ecommerce_order_service.model.dto.OrderResponse;
 import com.anjaniy.ecommerce_order_service.service.OrderService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -33,7 +32,7 @@ public class OrderController {
 
 
     @PostMapping
-    public ResponseEntity<ApiResponse> placeOrder(@RequestBody @Valid OrderRequest request) {
+    public ResponseEntity<ApiResponse> placeOrder(@RequestBody OrderRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(ApiResponse.<OrderResponse>builder()
                         .timestamp(LocalDateTime.now())

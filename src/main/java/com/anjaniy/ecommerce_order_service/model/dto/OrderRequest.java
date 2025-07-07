@@ -1,12 +1,13 @@
 package com.anjaniy.ecommerce_order_service.model.dto;
 
-import com.anjaniy.ecommerce_order_service.model.dto.PaymentInfoDto;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder
 public class OrderRequest {
     @NotNull(message = "User ID is required")
     private Long userId;

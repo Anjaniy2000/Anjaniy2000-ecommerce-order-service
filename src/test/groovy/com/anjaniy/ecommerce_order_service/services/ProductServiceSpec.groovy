@@ -9,7 +9,7 @@ class ProductServiceSpec extends BaseIntegrationSpec {
     @Autowired
     private ProductService productService
 
-    def 'Get Products' () {
+    def 'Should get products' () {
         given:
         when:
         def products = productService.getProducts()
@@ -17,15 +17,15 @@ class ProductServiceSpec extends BaseIntegrationSpec {
         assert products.size() == 10
     }
 
-    def 'Get Product with ID' () {
+    def 'Should get product with ID' () {
         given:
-        def productId = 5
+        def productId = 10
         when:
         def product = productService.getProduct(productId)
         then:
-        assert product.name == 'Noise Cancelling Headphones'
-        assert product.description == 'Over-ear wireless headphones'
-        assert product.price == 4999.0
-        assert product.stock == 15
+        assert product.name == 'Wireless Charger'
+        assert product.description == 'Fast charging pad for smartphones'
+        assert product.price == 699.00
+        assert product.stock == 35
     }
 }
